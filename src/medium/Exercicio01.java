@@ -2,21 +2,16 @@ package medium;
 
 public class Exercicio01 {
 
-    public static void main(String[] args) {
+    public static String eh_primo(int numero) {
 
-        int i = 0;
-
-        while (i <= 100) {
-
-            if (i % 2 == 0) {
-                System.out.println("O Número: " + i + " é par");
+       
+       
+            if (numero % 2 == 0) {
+               return "O Número: " + numero + " é par";
             } else {
-                System.out.println("O Número: " + i + " é ímpar");
+                return "O Número: " + numero + "é ímpar";
             }
-            i++;
-
-        }
-
+           
     }
 
 }
