@@ -4,10 +4,10 @@ import javax.swing.JOptionPane;
 
 public class Exercicio04 {
 
-    public static void main(String[] args) {
+    public static String exercicio4 (int numero10) {
 
-        String numeroDigitadoString = JOptionPane.showInputDialog("Digite o número que voce deseja calcular o dobro");
-        int numero = Integer.parseInt(numeroDigitadoString);
-        System.out.println("O dobro do numero " + numero + " é: " + numero * 2);
+        return "Digite o número que voce deseja calcular o dobro + numero10";
+
+       
     }
 }
