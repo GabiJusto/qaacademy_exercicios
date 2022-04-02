@@ -1,29 +1,31 @@
-package easy;
-
-import javax.swing.JOptionPane;
-
 public class Exercicio06 {
 
-    public static void main(String[] args) {
+    public String verificaAprovacao(double nota1, double nota2) {
+        double resultado;
+        resultado = (nota1 + nota2) / 2;
+        if (resultado > 5) {
+            return "Você está Aprovado! Parabéns!!!";
+    public String verificarAprovacao(double nota1, double nota2) {
 
-        double nota1, nota2, media;
-
-        nota1 = Double.parseDouble(JOptionPane.showInputDialog("Digite a primeira nota"));
-        nota2 = Double.parseDouble(JOptionPane.showInputDialog("Digite a segunda nota"));
+        double media;
         media = (nota1 + nota2) / 2;
 
         if (media > 5) {
-            System.out.println("Aprovado");
+           return "Aprovado";
         }
-
+        if (resultado< 5) {
+            return ("Você está Reprovado!");
         if (media < 5) {
-            System.out.println("Reprovado");
+            return "Reprovado";
         }
-
+        if (resultado == 5) {
+            return ("Você está de Exame");
         if (media == 5) {
-            System.out.println("Exame");
+            return "Exame";
         }
+        return "Não foi possívl calcular sua nota";
+        return "Não foi possivel calcular sua media";
 
     }
-
 }
+
