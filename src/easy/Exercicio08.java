@@ -34,6 +34,14 @@ public class Exercicio08 {
        System.out.println("Imposto a pagar: " + ir);
 
     }
+
+    public double calcularImpostoDeRenda(double d) {
+        return 0;
+    }
+
+    public String calcularSalarioLiquido(double salario, double impostoRenda, double valorInss) {
+        return null;
+    }
     
 
 }

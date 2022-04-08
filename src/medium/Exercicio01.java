@@ -1,17 +1,23 @@
-package medium;
-
 public class Exercicio01 {
 
-    public static String eh_primo(int numero) {
+    public static void main(String[] args) {
+    public String[] verificarNumerosParImpar() {
+        String[] vetorSoma = new String[101];
 
-       
-       
-            if (numero % 2 == 0) {
-               return "O Número: " + numero + " é par";
+        int i = 0;
+
+        while (i <= 100) {
+
+            if (i % 2 == 0) {
+                System.out.println("O Número: " + i + " é par");
+                vetorSoma[i] = "O Número: " + i + " é par";
             } else {
-                return "O Número: " + numero + "é ímpar";
+                System.out.println("O Número: " + i + " é ímpar");
+                vetorSoma[i] = "O Número: " + i + " é ímpar";
             }
-           
-    }
+            i++;
 
-}
+        }
+        return vetorSoma; 
+
+    }

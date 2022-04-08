@@ -1,5 +1,3 @@
-package easy;
-
 import javax.swing.JOptionPane;
 
 public class Exercicio09 {
