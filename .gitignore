@@ -2,3 +2,6 @@
 bin/
 lib/
 .settings
+/target/
+.classpath
+.project
